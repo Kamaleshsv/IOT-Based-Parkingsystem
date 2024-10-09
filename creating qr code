@@ -1,4 +1,0 @@
-import qrcode
-
-myqr = qrcode.make("https://github.com/Kamaleshsv/IOT-based-Parking-system")
-myqr.save("myqr.png")
