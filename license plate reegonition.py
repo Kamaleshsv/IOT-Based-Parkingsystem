@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras import layers, models
+from keras import layers,models
 import numpy as np
 from sklearn.model_selection import train_test_split
 
@@ -57,7 +57,7 @@ def identify_license_plate(model, image):
     return predicted_label
 
 # Example usage
-if _name_ == "_main_":
+if __name__ == "_main_":
     # Sample images and labels (for demonstration, use actual images in practice)
     X = np.random.random((100, 64, 64, 3))  # 100 random images of size 64x64 with 3 channels
     y = np.random.randint(10, size=100)     # 100 labels for 10 different license plates
